@@ -1,0 +1,23 @@
+// Version: 1.0.0
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type WebsiteId__995550682 = Nat;
+type Website__404323550 =
+  {
+    category : Text;
+    description : Text;
+    id : WebsiteId__995550682;
+    name : Text;
+    submittedAt : Int;
+    tags : [Text];
+    url : Text
+  };
+actor {
+  stable nextId : {var count : Nat};
+  stable websites :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Website__404323550]];
+      var elementIndex : Nat__490723111
+    }
+};

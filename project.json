@@ -1,0 +1,20 @@
+{
+  "overview": "A clean web directory platform where users can search and discover websites across any category. Features real-time search, category filtering, website detail pages, and a submission form to add new websites.",
+  "features": [
+    "Real-time search as you type",
+    "Category-based filtering",
+    "Website card grid with detail pages",
+    "Submit a website form with instant approval",
+    "Pre-loaded with sample websites across 10+ categories",
+    "Fully responsive on mobile and desktop"
+  ],
+  "category": "productivity",
+  "tags": [
+    "directory",
+    "search",
+    "websites",
+    "discovery",
+    "catalog"
+  ],
+  "last_updated": "2026-04-13T14:55:54.589Z"
+}

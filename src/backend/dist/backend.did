@@ -1,0 +1,20 @@
+type WebsiteId = nat;
+type Website = 
+ record {
+   category: text;
+   description: text;
+   id: WebsiteId;
+   name: text;
+   submittedAt: int;
+   tags: vec text;
+   url: text;
+ };
+service : {
+  getAllWebsites: () -> (vec Website) query;
+  getCategories: () -> (vec text) query;
+  getWebsiteById: (id: WebsiteId) -> (opt Website) query;
+  searchWebsites: (searchTerm: text, category: opt text) ->
+   (vec Website) query;
+  submitWebsite: (name: text, description: text, url: text, category: 
+   text, tags: vec text) -> (Website);
+}
